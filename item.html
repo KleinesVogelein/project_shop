@@ -15,45 +15,58 @@
 
 <body>
 
-    
+
 
     <header class="header">
-        <div class="logo">
+        <div class="header__wrapper">
+
+            <div class="logo">
+                <a href="start.html" class="home-link">
                 <h1 class="logo__short mobile">TL</h1>
                 <h1 class="logo__long tablet-desktop">Template</h1>
-        </div>
-
-        <div class="shopping-bag-preview">
-            <a class="shopping-bag-preview__link" href="shopping-bag.html">
-                <span class="shopping-bag-preview__icon"></span>
-                <span class="shopping-bag-preview__text">
-                   Bag £<span class="shopping-bag-preview__counter">236.50 (4)</span>
-                </span>
             </a>
+            </div>
+
+            <div class="header__info-wrapper">
+
+            <a href="#" class="email-sign-up tablet-desktop">Email sign up</a>
+
+            <div class="shopping-bag-preview">
+                <a class="shopping-bag-preview__link" href="shopping-bag.html">
+                    <span class="shopping-bag-preview__icon"></span>
+                    <div class="shopping-bag-preview__text">
+                        Bag £ 236.50 (4)
+                    </div>
+                </a>
+            </div>
+            </div>
         </div>
 
         <div class="menu">
-                <label for="hamburger-btn" class="hamburger-btn__label">&#9776;</label>
-                <input type="checkbox" id="hamburger-btn" class="hamburger-btn">
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item active-item"><a href="#">Women</a></li>
-                        <li class="nav__item"><a href="#">Men</a></li>
-                        <li class="nav__item"><a href="#">Handbags</a></li>
-                        <li class="nav__item"><a href="#">Accessories</a></li>
-                        <li class="nav__item"><a href="#">Sale</a></li>
-                        <li class="nav__item"><a href="#">New Arrivals</a></li>
-                        <li class="nav__item"><a href="#">Clearance</a></li>
-                        <li class="nav__item"><a href="#">Store Locator</a></li>
-                        <li class="nav__item">
-                            <form action="" class="search-form">
-                                <input type="search" class="search-bar">
-                                <button class="search-btn" type="submit"> <i class="fas fa-search"  aria-hidden="true"></i> </button>
-                            </form>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            <input type="checkbox" id="hamburger-btn" class="hamburger-btn">
+            <label for="hamburger-btn" class="hamburger-btn__label mobile">
+                <span class="hamburger-icon"></span>
+            </label>
+            <nav class="nav tablet-desktop">
+                <ul class="nav__list">
+                    <li class="nav__item active-item "><a href="#">Women</a></li>
+                    <li class="nav__item"><a href="#">Men</a></li>
+                    <li class="nav__item"><a href="#">Handbags</a></li>
+                    <li class="nav__item"><a href="#">Accessories</a></li>
+                    <li class="nav__item"><a href="#">Sale</a></li>
+                    <li class="nav__item"><a href="#">New Arrivals</a></li>
+                    <li class="nav__item"><a href="#">Clearance</a></li>
+                    <li class="nav__item"><a href="#">Store Locator</a></li>
+                    <li class="nav__item">
+                        <form action="" class="search" autocomplete="on">
+                            <input  class="search__bar" type="search" placeholder="Style Name">
+                            <button class="search__btn" type="submit"><i class="fas fa-search" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
 
     </header>
@@ -71,47 +84,49 @@
                 <img src="img/item/full.jpg" alt="Full item image" class="main__img">
             </div>
             <div class="item-photo__secondary-wrapper">
-                <div class="item-photo__secondary photo-active"><img src="img/item/thumb_0.jpg" alt="First thumbnail" class="secondary-img"></div>
+                <div class="item-photo__secondary photo-active"><img src="img/item/thumb_0.jpg" alt="First thumbnail"
+                        class="secondary-img"></div>
                 <div class="item-photo__secondary"><img src="img/item/thumb_1.jpg" alt="Second thumbnail" class="secondary-img"></div>
                 <div class="item-photo__secondary"><img src="img/item/thumb_2.jpg" alt="Third thumbnail" class="secondary-img"></div>
             </div>
         </div>
         <!-- item-photo -->
-<div class="item-info__wrapper">
-        <div class="item-info">
-            <div class="item__short-descr">Dark classic fit suit</div>
-            <div class="item__price">£180.60</div>
-            <div class="item__long-descr">
-                <p>Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs
-                    and a subtle stripe pattern throughout. </p>
-            </div>
-        </div>
-        <!-- /.item-inf0 -->
-
-        <div class="item-feature__wrapper">
-            <div class="item-feature">
-                <div class="feature-title">Size</div>
-                <div class="feature-variabels">
-                    <button class="button button-active button_item-features">UK 52</button>
-                    <button class="button button_item-features">UK 54</button>
-                    <button class="button button_item-features">UK 56</button>
+        <div class="item-info__wrapper">
+            <div class="item-info">
+                <div class="item__short-descr">Dark classic fit suit</div>
+                <div class="item__price">£180.60</div>
+                <div class="item__long-descr">
+                    <p>Featuring fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the
+                        cuffs
+                        and a subtle stripe pattern throughout. </p>
                 </div>
             </div>
+            <!-- /.item-inf0 -->
 
-            <div class="item-feature">
-                <div class="feature-title">Color</div>
-                <div class="feature-variabels">
-                    <button class="button button-active button_item-features">Black</button>
-                    <button class="button button_item-features">Blue</button>
+            <div class="item-feature__wrapper">
+                <div class="item-feature">
+                    <div class="feature-title">Size</div>
+                    <div class="feature-variabels">
+                        <button class="button button-active button_item-features">UK 52</button>
+                        <button class="button button_item-features">UK 54</button>
+                        <button class="button button_item-features">UK 56</button>
+                    </div>
+                </div>
+
+                <div class="item-feature">
+                    <div class="feature-title">Color</div>
+                    <div class="feature-variabels">
+                        <button class="button button-active button_item-features">Black</button>
+                        <button class="button button_item-features">Blue</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- /.item-feature -->
+            <!-- /.item-feature -->
 
-        <div class="btn__wrapper">
-            <button class="button button-active button_call-to-action">Add to bag</button>
+            <div class="btn__wrapper">
+                <button class="button button-active button_call-to-action">Add to bag</button>
+            </div>
         </div>
-</div>  
 
     </main>
     <div class="banner__wrapper">
