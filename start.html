@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/start.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400i|Open+Sans:700|Roboto:400,500,700" rel="stylesheet">     
+    <script src="js/start.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <title>Home Page</title>
+</head>
+
+<body class="app">
+
+    <header class="header">
+        <div class="logo">
+            <a class="logo__sign">TL</a>
+        </div>
+
+        <div class="flex_wrapper">
+            <div class="header__shopping_bag">
+                <img src="img/ico_bag.png" alt="Shopping Bag Icon" class="shopping_bag__icon">
+
+                <span class="shopping_bag__text">
+                    Bag(<span class="shopping_bag__count">0</span>)
+                </span>
+            </div>
+        
+
+            <div class="menu">
+                <input type="checkbox" class="menu_burger_toogle" id="menu_burger">
+                <label class="menu_burger" for="menu_burger">&#9776;</label>
+                <nav class="menu_list">
+                    <a class="menu_item" href="#women">Women</a>
+                    <a class="menu_item" href="#men">Men</a>
+                    <a class="menu_item" href="#handbags">Handbags</a>
+                    <a class="menu_item" href="#accessories">Accessories</a>
+                    <a class="menu_item" href="#sale">Sale</a>
+                    <a class="menu_item" href="#newArrivals">New Arrivals</a>
+                    <a class="menu_item" href="#clearance">Clearance</a>
+                    <a class="menu_item" href="#storeLocation">Store Locator</a>
+                    <form action="" id="search_form" class="search_bar">
+                        <input type="search" class="search_bar__input">
+                        <button class="search_bar__icon">i</button>
+                    </form>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+            <section class="promo-block">
+                    <a href="#">
+                    <div class="promo-block__text">Nike Red</div>
+                    <img class='promo-block__img' src="img/rednike.png" alt="nikered">
+                    </a>
+                  </section>
+                <!-- /.promo-block -->
+                <section class="product-list">
+                  <div class="product-list__article">
+                  <h1 class='product-list__title'>Best offer</h1>
+                  <p class="product-list__discr">This offer is valid in-store and online. Prices displayed reflect this additional discount. This offer ends at 11:59 GMT on March 1st 2019</p>
+                </div>
+                <div class="product-list__gallery"></div>
+                <!-- /.product-list__gallery -->
+                <div class="product-list__price">£161.00=£146.00</div>
+                <button class="product-list__button_o">Add to bag</button>
+                </section>
+                <!-- /.product-list -->
+    </main>
+
+
+</body>
+
+</html>
+
+
+<!-- I don't know if it's fine code 
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item nav__active"><a href="#women">Women</a>
+            <a href="#men">Men</a>
+            <a href="#handbags">Handbags</a>
+            <a href="#accessories">Accessories</a>
+            <a href="#sale">Sale</a>
+            <a href="#newArrivals">New Arrivals</a>
+            <a href="#clearance">Clearance</a>
+            <a href="#storeLocation">Store Locator</a>
+            <li class="search_bar_wrapper">
+                <form action="" id="search_form" class="search_bar">
+                    <input type="search" class="search_bar__input">
+                    <button class="search_bar__icon">i</button>
+                </form>
+            
+        </ul>
+    </nav> -->

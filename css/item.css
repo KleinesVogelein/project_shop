@@ -1,0 +1,373 @@
+html {
+    font-size: 10px;
+}
+
+
+
+.back-link {
+    max-width: 100%;
+    height: 5.5rem;
+    line-height: 5.5rem;
+    padding: 0 2rem;
+    vertical-align: middle;
+    border-bottom: .1em solid #000;
+        
+}
+/* 
+.back-link__wrapper {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+i { 
+    vertical-align: middle;
+} */
+
+.back-link__text {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.main {
+    max-width: 335px;
+    margin: 0 auto;
+}
+
+.item-photo {
+    padding-top: 1.5rem;
+}
+
+.main__img {
+    height: 100%;
+}
+
+.item-photo__secondary-wrapper {
+    display: flex;
+}
+
+.item-photo__secondary {
+
+}
+
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    color: black;
+}
+
+.item__short-descr {
+    margin-top: 3.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.item__price {
+    margin-top: 1.5em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.item__long-descr {
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    text-align: center;
+}
+.item-feature__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.0rem;
+}
+.item-feature {
+    display: flex;
+    height: 6.0rem;
+}
+
+.item-feature:last-of-type {
+    margin-top: 3.0rem;
+}
+
+.feature-title {
+    width: 5.0em;
+    padding-left: 1.0rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 6.0rem;
+}
+
+.feature-variabels {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1.0rem;
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    background: #fff;
+    color: #000;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+
+.button-active {
+    border: #e5e5e5 .1rem solid;
+}
+
+.button_item-features {
+    min-width: 6rem;
+}
+
+
+.btn__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6.5rem 7rem;
+}
+
+.button_call-to-action {
+    width: 22rem;
+    height: 6rem;
+}
+
+.banner__wrapper {
+    width: 100%;
+    height: 24rem;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner-first {
+    height: 100%;
+    background-image: url(../img/item/banner-first.jpg);
+    background-color: #324063;
+    background-size: cover;
+}
+
+.banner-second {
+    background-image: url(../img/item/banner-second.jpg);
+    background-color: #c9cbcd;
+    background-size: cover;
+    display: none;
+}
+
+.banner-third {
+    background-image: url(../img/item/banner-third.jpg);
+    background-color: #fff;
+    background-size: cover;
+    display: none;
+}
+
+
+
+.banner__text {
+    position: absolute;
+    right: 2.0rem;
+    top: 3.0rem;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+}
+
+.banner-second__text {
+    top: 16rem;
+    right: 5rem;
+}
+
+.banner-third__text{
+    
+}
+
+.banner__title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.0rem;
+    font-weight: 700;
+}
+
+.banner-third__title {
+    color: #f14a58;
+    
+}
+
+.banner__descr {
+    font-family: "Lebre Baskerville", serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 2.6rem;  
+}
+
+.banner-second__descr {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+
+@media screen and (min-width: 768px) {
+    .main {
+        max-width: 690px;
+    }
+
+    .back-link__text {
+        font-size: 1.6rem;
+    }
+
+    .item-photo {
+        display: flex;
+    }
+
+    .item-photo__main {
+        height: 345px;        
+    }
+
+    .item-photo__secondary-wrapper {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main__img{
+        width: unset;
+    }
+
+    .item__long-descr {
+        max-width: 450px;
+        
+    }
+       
+    .item-feature__wrapper  {
+        align-items: center;
+    }
+
+    .banner__wrapper {
+        width: 100%;
+        height: 253px;
+        display: flex;
+    }
+
+    .banner-first {
+        flex-grow: 2;
+    }
+
+    .banner-second {
+        display: block;
+        flex-grow: 1;
+    }
+
+    .banner-first__text {
+        right: 4.7rem;
+        top: 4.5rem;
+    }
+
+
+}
+
+@media screen and (min-width: 1300px){
+
+    .main {
+        max-width: 1300px;
+        display: flex;
+        align-items: center;
+    }
+
+    .item-photo {
+        display: block;
+        padding: 0;
+    }
+
+    .item-photo__main {
+        height: unset;
+    }
+
+    .main__img {
+        height: 39rem;
+    }
+
+    .item-photo__secondary-wrapper {
+        flex-direction: row;
+        max-width: 59rem;
+    }
+
+    .secondary-img {
+        width: 19.5rem;
+        height: 13rem;
+    }
+
+    .item-info__wrapper {
+        margin-left: 5rem;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        max-height: 59rem;
+    }
+
+    .item-info {
+        align-items: flex-start;
+        padding-top: 40px;
+    }
+
+    .item-feature__wrapper {
+        align-items: flex-start;
+    }
+
+    .item__short-descr{
+        font-size: 2.6rem;
+        margin: 0;
+    }
+
+    .item__long-descr {
+        max-width: 100%;
+        margin-top: 3rem;
+        order: 2;
+        font-size: 1.6rem;
+        text-align: left;
+    }
+
+    .item__price {
+        order: 3;
+        font-size: 2.5rem;
+        margin-top: 50px;
+
+        margin-bottom: 5rem;
+    }
+
+    .button_call-to-action {
+        width: 34rem;
+    }
+
+    .banner__wrapper {
+        height: 38.5rem;
+    }
+
+    .banner-third{
+        display: block;
+        flex-grow: 1;
+    }
+
+    .banner__title {
+        font-size: 2.8rem;
+    }
+
+
+
+
+}
