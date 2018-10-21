@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400i|Open+Sans:700|Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/item.css">
+    <script src="js/common.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -31,14 +32,11 @@
 
                 <a href="#" class="email-sign-up tablet-desktop">Email sign up</a>
 
-                <div class="shopping-bag-preview">
-                    <a class="shopping-bag-preview__link" href="shopping-bag.html">
-                        <span class="shopping-bag-preview__icon"></span>
-                        <div class="shopping-bag-preview__text">
-                            Bag £ 236.50 (4)
-                        </div>
-                    </a>
-                </div>
+                <a class="shopping-bag-preview" href="shopping-bag.html">
+                    <div class="shopping-bag-preview__text">
+                        Bag £ 236.50 (4)
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -49,7 +47,7 @@
             </label>
             <nav class="nav tablet-desktop">
                 <ul class="nav__list">
-                    <li class="nav__item active-item "><a href="#">Women</a></li>
+                    <li class="nav__item "><a class="nav-link" href="#" active>Women</a></li>
                     <li class="nav__item"><a href="#">Men</a></li>
                     <li class="nav__item"><a href="#">Handbags</a></li>
                     <li class="nav__item"><a href="#">Accessories</a></li>
@@ -107,17 +105,34 @@
                 <div class="item-feature">
                     <div class="feature-title">Size</div>
                     <div class="feature-variabels">
-                        <button class="button button-active button_item-features">UK 52</button>
-                        <button class="button button_item-features">UK 54</button>
-                        <button class="button button_item-features">UK 56</button>
+                        <form id="size-value" action="">
+
+                            <input type="radio" class="radio-btn" name="color" id="option-uk52" checked>
+                            <label for="option-uk52" class="feature-option">UK52</label>
+
+                            <input type="radio" class="radio-btn" name="color" id="option-uk54">
+                            <label for="option-uk54" class="feature-option">UK54</label>
+
+                            <input type="radio" class="radio-btn" name="color" id="option-uk56">
+                            <label for="option-uk56" class="feature-option">UK56</label>
+
+                        </form>
                     </div>
                 </div>
 
                 <div class="item-feature">
                     <div class="feature-title">Color</div>
                     <div class="feature-variabels">
-                        <button class="button button-active button_item-features">Black</button>
-                        <button class="button button_item-features">Blue</button>
+                        <form action="" id="color-value">
+
+                            <input type="radio" class="radio-btn" name="color" id="option-black">
+                            <label class="feature-option" for="option-black">Black</label>
+
+                            <input type="radio" class="radio-btn" name="color" id="option-blue" checked>
+                            <label class="feature-option" for="option-blue">Blue</label>
+
+
+                        </form>
                     </div>
                 </div>
             </div>
@@ -178,23 +193,23 @@
         </div>
         <div class="contacts">
             <div class="contacts__wrapper">
-            <div class="contacts__socials">
-                <h2 class="info-title">Questions</h2>
-                <div class="info-item-wrapper">
-                    <a href="twitter.com/@template">
-                    <img src="img/twi_ico.png" alt="twitter-icon" width="14" height="12">
-                    <span class="info-item">Tweet us</span>
-                    <span class="twitter-user">@template</span>
-                </a>
+                <div class="contacts__socials">
+                    <h2 class="info-title">Questions</h2>
+                    <div class="info-item-wrapper">
+                        <a href="twitter.com/@template">
+                            <img src="img/twi_ico.png" alt="twitter-icon" width="14" height="12">
+                            <span class="info-item">Tweet us</span>
+                            <span class="twitter-user">@template</span>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="contacts__phone">
-                <h2 class="info-title">Order by phone</h2>
-                <div class="info-item-wrapper">
-                    <span class="info-item info-item-phone">8-800-409-47-12</span>
+                <div class="contacts__phone">
+                    <h2 class="info-title">Order by phone</h2>
+                    <div class="info-item-wrapper">
+                        <span class="info-item info-item-phone">8-800-409-47-12</span>
 
+                    </div>
                 </div>
-            </div>
             </div>
 
             <p class="contacts__info desktop">We have our own delivery service which operates in 23 major European
