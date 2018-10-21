@@ -3,6 +3,8 @@ html,body{
     padding: 0;
     box-sizing: border-box;
     font-size: 10px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+
 }
 
 img {
@@ -16,11 +18,9 @@ img {
     box-sizing: border-box;
 }
 
-body, html {
-    height: 100%;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-
-}
+section{
+    border-bottom: 1px solid #e5e5e5;
+  }   
 
 a {
     color: black;
@@ -296,6 +296,102 @@ a {
     font-size: 13px;
 }
 
+.site-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .info-links {
+      width: 100%;
+      display: flex;
+      border-bottom: 1px solid #e5e5e5;
+      margin-top: 35px;
+      padding-bottom: 30px;
+  }
+
+  .info-links__list{
+      margin: 0 auto;
+  }
+
+  
+
+  .info-title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    margin-bottom: 20px;
+  }
+  .info-links__list-links{
+      margin: 0 auto;
+      list-style: none;
+  }
+  .info-item{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 36px;
+    letter-spacing: 0.4px;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .info-item-wrapper > a {
+      display: block;
+  }
+
+  .info-item-wrapper img {
+      display: unset;
+      width: unset;
+  }
+  
+
+
+
+  .contacts{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }       
+
+  .contacts__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .contacts__socials{
+    border-right: 1px solid #e5e5e5;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .contacts .info-title {
+    margin: 0;
+  }
+
+  .contacts__phone{
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+  }
+
+  .contacts__info {
+        max-width: 315px;
+        margin-top: 30px;
+        font-size: 16px;
+        font-family: "Libre Baskerville", serif;
+        color: rgb(117, 117, 117);
+        font-style: italic;
+        line-height: 1.875;
+
+      
+  }
+  
+
 
 .footer {
     display: flex;
@@ -322,7 +418,21 @@ a {
 }
 
 .social-links__item {
-    margin-left: 25px;
+    margin-left: auto;
+}
+
+.social-links__item>a {
+    display: block;
+    width: 20px;
+    height: 17px;
+
+}
+
+.social-links__item.fb > a{
+    background: url(../img/fb.png) center center no-repeat;
+}
+.social-links__item.tw > a {
+    background: url(../img/twi.png) center center no-repeat;
 }
 
 
@@ -331,9 +441,6 @@ a {
     list-style: none;
 }
 
-.footer__service-info {
-    display: flex;
-}
 
 .share-info {
     display: inherit;
@@ -384,7 +491,6 @@ a {
         display: block;
         
     }
-
     
 
     .nav{
@@ -453,8 +559,65 @@ a {
         width: 340px;
     }
 
+    .site-info {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 690px;
+
+        margin: 0 auto;
+    }
+
+    .contacts {
+        border-left:  #e5e5e5 1px solid;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 45px;
+        margin-top: 35px;
+    }
+
+    .contacts__wrapper {
+        display: block;
+    }
+
+    .contacts__socials{
+        border: none;
+        padding: 0;
+    }
+
+    .contacts__phone {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .social-links {
+        margin-top: 70px;
+    }
+
     .footer {
         flex-direction: row;
+        justify-content: space-between
+    }
+
+    .footer__service-info {
+        flex-grow: 1;
+        order: 1;
+    }
+
+    .copywrite {
+        font-size: 12px;
+    }
+
+    .share-info {
+        margin-left: auto;
+        font-size: 16px;
+    }
+
+    .footer__links {
+        flex-grow: 1;
+        order: 2;
+        justify-content: flex-end;
+        font-size: 12px;
+
     }
 
     .mobile-tablet,
@@ -481,6 +644,33 @@ a {
  
     .button_call-to-action {
         font-size: 24px;
+    }
+
+    .site-info {
+        max-width: 1300px;
+    }
+
+
+    .contacts__wrapper {
+        display: flex;
+    }
+
+    .contacts__socials,
+    .contacts__phone {
+        padding: 0;
+        margin: 0;
+    }
+
+    .contacts__phone {
+        padding-left: 100px;
+    }
+
+    .info-title {
+        font-size: 16px;
+    }
+
+    .social-links {
+        margin-top: 50px;
     }
 
     .tablet-desktop,
