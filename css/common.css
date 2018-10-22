@@ -1,4 +1,5 @@
 html,body{
+    height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,12 +28,36 @@ a {
     text-decoration: none;
 }
 
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 20px;
+
+}
+
+.main {
+    max-width: 335px;
+    margin: 0 auto;
+}
+
+
+.content {
+    flex: 1 0 auto;
+}
+
+.bottom {
+    flex: 0 0 auto;
+}
+
 
 .header {
+    max-width: 335px;
+    margin: 0 auto;
     width: 100%;
     display: flex;
     height: 7rem;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     align-items: center;
 }
 
@@ -245,11 +270,39 @@ a {
 }
 
 
+.page-title {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 18px; 
+    font-weight: 700;
+    line-height: 65px;
+    text-align: left;
+}
+
+.item-img__wrapper {
+    display: block;
+    position: relative;
+}
+
+.new-label {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;   
+    background-color: #f14a58;
+    width: 53px;
+    height: 26px;
+    color: #ffffff;
+    font-size: 13px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 500;
+    line-height: 27px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
 .item-preview__wrapper {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 0 20px;
+    /* padding: 0 20px; */
 }
 
 .item-preview {
@@ -414,14 +467,11 @@ a {
 
   .contacts__info {
         max-width: 315px;
-        margin-top: 30px;
         font-size: 16px;
         font-family: "Libre Baskerville", serif;
         color: rgb(117, 117, 117);
         font-style: italic;
         line-height: 1.875;
-
-      
   }
   
 
@@ -440,7 +490,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     height: 65px;
     border-bottom: #e5e5e5 1px solid;
 
@@ -508,10 +558,19 @@ a {
 .mobile-tablet {
     display: block;
 }
+.inline-mobile,
+.inline-mobile-tablet {
+    display: inline-block;
+}
 
 .tablet,
 .tablet-desktop ,
 .desktop {
+    display: none;
+}
+.inline-tablet,
+.inline-tablet-desktop ,
+.inline-desktop {
     display: none;
 }
 
@@ -519,7 +578,18 @@ a {
 
 @media (min-width: 768px){
 
+    .app {
+        padding: 0 40px;
+    }
+
+    .main {
+        max-width: 690px;
+    }
+
+
+
     .header {
+        max-width: 690px;
         height: 120px;
         display: block;
         
@@ -537,23 +607,29 @@ a {
         font-size: 12px;
         font-family: "Open Sans", sans-serif;
         font-weight: bold;
-        line-height: 5.417;
         text-align: left;
  
     }
 
     .nav__item {
         margin: 0;
-        margin-right: 15px;
+        margin-right: 10px;
     }
 
     .nav__item:last-of-type{
-        max-width: 200px;
         margin-left: auto;
         height: 100%;
         outline: none;
-      
+        margin-left: 0;
 
+    }
+
+    .nav__item:not(:last-of-type) {
+        padding-top: 10px;
+    }
+
+    .search {
+        max-width: 155px;
     }
 
     .search__bar {
@@ -608,6 +684,7 @@ a {
 
     .contacts__wrapper {
         display: block;
+        padding-top: 0;
     }
 
     .contacts__socials{
@@ -621,12 +698,11 @@ a {
     }
 
     .social-links {
-        margin-top: 70px;
+        margin-top: 40px;
     }
 
     .footer {
         flex-direction: row;
-        justify-content: space-between
     }
 
     .footer__service-info {
@@ -661,15 +737,35 @@ a {
     .desktop {
         display: none;
     }
+    .inline-mobile-tablet,
+    .inline-tablet,
+    .inline-tablet-desktop {
+        display: inline-block;
+    }
+
+    .inline-mobile,
+    .inline-desktop {
+        display: none;
+    }
 
 
 }
 
 @media (min-width:1300px){
 
-    .header{
+    .app{
+        padding: 0 60px;
+    }
+
+     .header{
         max-width: 1300px;
         margin: 0 auto;
+    }
+
+    .main {
+        max-width: 1300px;
+        display: flex;
+        align-items: center;
     }
 
 
@@ -732,6 +828,16 @@ a {
     .mobile,
     .mobile-tablet,
     .tablet {
+        display: none;
+    }
+    .inline-tablet-desktop,
+    .inline-desktop {
+        display: inline-block;
+    }
+
+    .inline-mobile,
+    .inline-mobile-tablet,
+    .inline-tablet {
         display: none;
     }
 }

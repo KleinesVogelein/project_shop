@@ -5,22 +5,17 @@ html {
 
 
 .back-link {
-    /* max-width: 100%; */
+    max-width: 100%;
     height: 5.5rem;
     line-height: 5.5rem;
     padding: 0 2rem;
     vertical-align: middle;
     border-bottom: .1em solid #000;
 }
-/* 
-.back-link__wrapper {
-    white-space: nowrap;
-    overflow: hidden;
-}
 
-i { 
-    vertical-align: middle;
-} */
+.app {
+    padding: 0 20px;
+}
 
 .back-link__text {
     font-family: "Open Sans", Arial, sans-serif;
@@ -32,10 +27,6 @@ i {
     vertical-align: middle;
 }
 
-.main {
-    max-width: 335px;
-    margin: 0 auto;
-}
 
 .item-photo {
     padding-top: 1.5rem;
@@ -222,9 +213,6 @@ i {
 
 
 @media screen and (min-width: 768px) {
-    .main {
-        max-width: 690px;
-    }
 
     .back-link__text {
         font-size: 1.6rem;
@@ -286,11 +274,7 @@ i {
         margin: 20px auto 0;
     }
 
-    .main {
-        max-width: 1300px;
-        display: flex;
-        align-items: center;
-    }
+
 
     .item-photo {
         display: block;
