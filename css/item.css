@@ -132,7 +132,7 @@ html {
     padding: 6.5rem 7rem;
 }
 
-.button_call-to-action {
+.button__call-to-action {
     width: 22rem;
     height: 6rem;
 }
@@ -337,7 +337,7 @@ html {
         margin-bottom: 5rem;
     }
 
-    .button_call-to-action {
+    .button__call-to-action {
         width: 34rem;
     }
 

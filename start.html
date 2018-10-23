@@ -5,95 +5,284 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400i|Open+Sans:700|Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/start.css">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400i|Open+Sans:700|Roboto:400,500,700" rel="stylesheet">     
     <script src="js/start.js" defer></script>
     <script src="js/common.js" defer></script>
     <title>Home Page</title>
 </head>
 
-<body class="app">
+<body>
 
-    <header class="header">
-        <div class="logo">
-            <a class="logo__sign">TL</a>
-        </div>
+    <div class="app">
+        <div class="content">
+            <header class="header">
+                <div class="header__wrapper">
 
-        <div class="flex_wrapper">
-            <div class="header__shopping_bag">
-                <img src="img/ico_bag.png" alt="Shopping Bag Icon" class="shopping_bag__icon">
+                    <div class="logo">
+                        <a href="start.html" class="home-link">
+                            <h1 class="logo__short mobile">TL</h1>
+                            <h1 class="logo__long tablet-desktop">Template</h1>
+                        </a>
+                    </div>
 
-                <span class="shopping_bag__text">
-                    Bag(<span class="shopping_bag__count">0</span>)
-                </span>
-            </div>
-        
+                    <div class="header__info-wrapper">
 
-            <div class="menu">
-                <input type="checkbox" class="menu_burger_toogle" id="menu_burger">
-                <label class="menu_burger" for="menu_burger">&#9776;</label>
-                <nav class="menu_list">
-                    <a class="menu_item" href="#women">Women</a>
-                    <a class="menu_item" href="#men">Men</a>
-                    <a class="menu_item" href="#handbags">Handbags</a>
-                    <a class="menu_item" href="#accessories">Accessories</a>
-                    <a class="menu_item" href="#sale">Sale</a>
-                    <a class="menu_item" href="#newArrivals">New Arrivals</a>
-                    <a class="menu_item" href="#clearance">Clearance</a>
-                    <a class="menu_item" href="#storeLocation">Store Locator</a>
-                    <form action="" id="search_form" class="search_bar">
-                        <input type="search" class="search_bar__input">
-                        <button class="search_bar__icon">i</button>
-                    </form>
-                </nav>
+                        <a href="#" class="email-sign-up tablet-desktop">Email sign up</a>
 
-            </div>
-        </div>
-    </header>
-
-    <main class="main">
-            <section class="promo-block">
-                    <a href="#">
-                    <div class="promo-block__text">Nike Red</div>
-                    <img class='promo-block__img' src="img/rednike.png" alt="nikered">
-                    </a>
-                  </section>
-                <!-- /.promo-block -->
-                <section class="product-list">
-                  <div class="product-list__article">
-                  <h1 class='product-list__title'>Best offer</h1>
-                  <p class="product-list__discr">This offer is valid in-store and online. Prices displayed reflect this additional discount. This offer ends at 11:59 GMT on March 1st 2019</p>
+                        <a class="shopping-bag-preview" href="shopping-bag.html">
+                            <div class="shopping-bag-preview__text">
+                                Bag £ 236.50 (4)
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="product-list__gallery"></div>
-                <!-- /.product-list__gallery -->
-                <div class="product-list__price">£161.00=£146.00</div>
-                <button class="product-list__button_o">Add to bag</button>
-                </section>
-                <!-- /.product-list -->
-    </main>
 
+                <div class="menu">
+                    <input type="checkbox" id="hamburger-btn" class="hamburger-btn">
+                    <label for="hamburger-btn" class="hamburger-btn__label mobile">
+                        <span class="hamburger-icon"></span>
+                    </label>
+                    <nav class="nav tablet-desktop">
+                        <ul class="nav__list">
+                            <li class="nav__item "><a class="nav-link" href="#" active>Women</a></li>
+                            <li class="nav__item"><a href="#">Men</a></li>
+                            <li class="nav__item"><a href="#">Handbags</a></li>
+                            <li class="nav__item"><a href="#">Accessories</a></li>
+                            <li class="nav__item"><a href="#">Sale</a></li>
+                            <li class="nav__item"><a href="#">New Arrivals</a></li>
+                            <li class="nav__item"><a href="#">Clearance</a></li>
+                            <li class="nav__item"><a href="#">Store Locator</a></li>
+                            <li class="nav__item">
+                                <form action="" class="search" autocomplete="on">
+                                    <input class="search__bar" type="search" placeholder="Style Name">
+                                    <button class="search__btn" type="submit"><i class="fas fa-search" aria-hidden="true"></i>
+                                    </button>
+                                </form>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+            </header>
+
+            <div class="horizontal-divider"></div>
+
+            <section class="banners">
+                    <div class="banner">
+                        <a href="item.html" class="banner__link">
+                            <img src="img/start/banner__nike-shoes.jpg" alt="Sneaker photo" class="banner__img">
+                            <h2 class="banner__text">Nike Red </h2>
+                        </a>
+                    </div>
+                    <div class="banner tablet-desktop">
+                        <a href="item.html" class="banner__link ">
+                            <img src="img/start/banner__girl-caps-and-hats.jpg" alt="Sale up to 50%" class="banner__img">
+                            <h2 class="banner__text">Caps & Hats <span class="banner__subtext">Sale -50%</span> </h2>
+                        </a>
+                    </div>
+                </section>
+
+            <main class="main main__start">
+
+
+
+                <div class="horizontal-divider"></div>
+
+
+                <section class="start-section">
+                    <div class="start-section__text-wrapper">
+                        <h2 class="start-section__title">Best offer</h2>
+                        <p class="start-section__text">This offer valid in-store and online. Prices displayed reflect
+                            this
+                            additional discount. This offer ends at 11:59 GTM on March 1st 2019</p>
+                    </div>
+                    <div class="item-preview__wrapper ">
+                        <div class="item-preview">
+                            <button class="button__arrow-up"> <i class="fa fa-angle-up"></i> </button>
+                            <div class="item-preview__content">
+                                <a href="catalog.html" class="item-preview__links">
+                                    <div class="new-true">NEW</div>
+                                    <img src="img/start/item-preview__photo_1.jpg" alt="Item preview photo" class="item-preview__photo">
+                                    <div class="item-preview__title">Only Skinny Jeans</div>
+                                    <div class="item-preview__price">£ 65.50</div>
+                                </a>
+                            </div>
+                            <button class="button__arrow-down"><i class="fa fa-angle-down"></i></button>
+
+                        </div>
+                        <div class="plus-sign">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="item-preview">
+                            <button class="button__arrow-up"> <i class="fa fa-angle-up"></i> </button>
+                            <div class="item-preview__content">
+                                <a href="catalog.html" class="item-preview__links">
+                                    <img src="img/start/item-preview__photo_2.jpg" alt="Item preview photo" class="item-preview__photo">
+                                    <div class="item-preview__title">Levi's Jeans For Women</div>
+                                    <div class="item-preview__price">£ 65.50</div>
+                                </a>
+                            </div>
+                            <button class="button__arrow-down"><i class="fa fa-angle-down"></i></button>
+
+                        </div>
+                    </div>
+
+                    <div class="total-price__wrapper">
+                        <div class="total-price_without-discount">£ 161.00</div>
+                        <div class="total-price">= £ 146.00</div>
+                    </div>
+
+                    <button class="button button__call-to-action">Add to bag</button>
+
+                </section>
+
+                <div class="horizontal-divider"></div>
+
+
+                <section class="start-section">
+                    <div class="start-section__text-wrapper">
+                        <h2 class="start-section__title">New Arrivals</h2>
+                    </div>
+                    <div class="item-preview__wrapper item-preview__wrapper_arrivals">
+                        <div class="item-preview">
+
+                            <div class="item-preview__content">
+                                <a href="catalog.html" class="item-preview__links">
+                                    <div class="new-true">NEW</div>
+                                    <img src="img/start/item-preview__photo_1.jpg" alt="Item preview photo" class="item-preview__photo">
+                                    <div class="item-preview__title">Only Skinny Jeans</div>
+                                    <div class="item-preview__price">£ 65.50</div>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="item-preview">
+
+                            <div class="item-preview__content">
+                                <a href="catalog.html" class="item-preview__links">
+                                    <div class="new-true">NEW</div>
+                                    <img src="img/start/item-preview__photo_2.jpg" alt="Item preview photo" class="item-preview__photo">
+                                    <div class="item-preview__title">Levi's Jeans For Women</div>
+                                    <div class="item-preview__price">£ 65.50</div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button class="button button__call-to-action button__call-to-action_arrivals ">New arrivals</button>
+
+                </section>
+
+            </main>
+
+        </div>
+
+
+
+        <div class="bottom">
+            <div class="horizontal-divider"></div>
+            <section class="site-info">
+                <div class="info-links">
+                    <div class="info-links__list">
+                        <h2 class="info-title">Quick Links</h2>
+                        <ul class="info-links__list-links">
+                            <li><a href="#" class="info-item">Store locator</a></li>
+                            <li><a href="#" class="info-item">Gift cards</a></li>
+                            <li><a href="#" class="info-item">Size guide</a></li>
+                            <li><a href="#" class="info-item">About us</a></li>
+                            <li><a href="#" class="info-item">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="info-links__list">
+                        <h2 class="info-title">Customer Care</h2>
+                        <ul class="info-links__list-links">
+                            <li><a href="#" class="info-item">Customer service</a></li>
+                            <li><a href="#" class="info-item">Track my order</a></li>
+                            <li><a href="#" class="info-item">Return policy</a></li>
+                            <li><a href="#" class="info-item">Shipping & delivery</a></li>
+                            <li><a href="#" class="info-item">Contact us</a></li>
+                            <li><a href="#" class="info-item">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="horizontal-divider"></div>
+
+                <div class="contacts">
+                    <div class="contacts__wrapper">
+                        <div class="contacts__socials">
+                            <h2 class="info-title">Questions</h2>
+                            <div class="info-item-wrapper">
+                                <a href="twitter.com/@template">
+                                    <img src="img/twi_ico.png" alt="twitter-icon" width="14" height="12">
+                                    <span class="info-item">Tweet us</span>
+                                    <span class="twitter-user">@template</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contacts__phone">
+                            <h2 class="info-title">Order by phone</h2>
+                            <div class="info-item-wrapper">
+                                <span class="info-item info-item-phone">8-800-409-47-12</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="contacts__info desktop">We have our own delivery service which operates in 23 major
+                        European
+                        cities. Delivery time - 3-5 days.</p>
+
+                    <div class="social-links tablet-desktop">
+                        <ul class="list">
+                            <li class="social-links__item fb"><a href="facebook.com"></a></li>
+                            <li class="social-links__item tw"><a href="twitter.com"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+            <div class="horizontal-divider"></div>
+
+            <footer class="footer">
+                <div class="footer__links">
+                    <div class="service-links">
+                        <ul class="list">
+                            <li class="service-links__item"><a href="#">Legal notice</a></li>
+                            <li class="service-links__item"><a href="#">Privacy policy</a></li>
+                            <li class="service-links__item"><a href="#">Site map</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-links mobile">
+                        <ul class="list">
+                            <li class="social-links__item fb"><a href="facebook.com"></a></li>
+                            <li class="social-links__item tw"><a href="twitter.com"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="horizontal-divider"></div>
+
+                <div class="footer__service-info">
+                    <div class="copywrite">© 2010–2015, The Template Group inc.</div>
+                    <div class="share-info">Share
+                        <div class="share-info__count">1 345</div>
+                    </div>
+                </div>
+
+            </footer>
+
+        </div>
+
+    </div>
 
 </body>
 
 </html>
-
-
-<!-- I don't know if it's fine code 
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__item nav__active"><a href="#women">Women</a>
-            <a href="#men">Men</a>
-            <a href="#handbags">Handbags</a>
-            <a href="#accessories">Accessories</a>
-            <a href="#sale">Sale</a>
-            <a href="#newArrivals">New Arrivals</a>
-            <a href="#clearance">Clearance</a>
-            <a href="#storeLocation">Store Locator</a>
-            <li class="search_bar_wrapper">
-                <form action="" id="search_form" class="search_bar">
-                    <input type="search" class="search_bar__input">
-                    <button class="search_bar__icon">i</button>
-                </form>
-            
-        </ul>
-    </nav> -->
