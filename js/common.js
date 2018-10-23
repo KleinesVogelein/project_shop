@@ -1,11 +1,11 @@
-// function for changing classes
 
-function changeClass (target, classToAdd, classToRemove){
-    console.log(target);
-    let el = document.querySelector(target);
-    if(classToRemove) {
-        el.classList.remove(classToRemove);
+
+document.body.addEventListener("click", (event) => {
+
+    if(event.target.classList.contains("button-add-to-bag")) {
+        updateTotal();
     }
-    el.classList.add(classToAdd);
-}
 
+
+    
+});
