@@ -1,5 +1,6 @@
 html {
     font-size: 10px;
+    background-color: #000;
 }
 
 
@@ -184,7 +185,7 @@ html {
 }
 
 .banner-third__text{
-    
+
 }
 
 .banner__title {
@@ -195,7 +196,7 @@ html {
 
 .banner-third__title {
     color: #f14a58;
-    
+
 }
 
 .banner__descr {
@@ -203,7 +204,7 @@ html {
     font-size: 1.4rem;
     font-weight: 400;
     font-style: italic;
-    line-height: 2.6rem;  
+    line-height: 2.6rem;
 }
 
 .banner-second__descr {
@@ -223,7 +224,7 @@ html {
     }
 
     .item-photo__main {
-        height: 345px;        
+        height: 345px;
     }
 
     .item-photo__secondary-wrapper {
@@ -238,9 +239,9 @@ html {
 
     .item__long-descr {
         max-width: 450px;
-        
+
     }
-       
+
     .item-feature__wrapper  {
         align-items: center;
     }
